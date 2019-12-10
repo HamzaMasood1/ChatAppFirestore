@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1087667841004",
+    "firebase_url": "https://assignmenthamzamasoodchatapp.firebaseio.com",
+    "project_id": "assignmenthamzamasoodchatapp",
+    "storage_bucket": "assignmenthamzamasoodchatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087667841004:android:ec4f90028c9dcd88fc82c9",
+        "android_client_info": {
+          "package_name": "com.example.assignmenthamzamasoodchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087667841004-p5gf4r4cm01v2pkh2l9ccjpoe8sn35if.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.assignmenthamzamasoodchatapp",
+            "certificate_hash": "83ae11c9ecf56f058ce8a098ff8e1f0bfd7310b0"
+          }
+        },
+        {
+          "client_id": "1087667841004-f959svp8ne3tqj65eq2ojd8o4c6ccid4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCITEGei1XRRdSSMwHV94AEO4zbB5HYj0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087667841004-f959svp8ne3tqj65eq2ojd8o4c6ccid4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
