@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.assignmenthamzamasoodchatapp.MessageActivity;
 import com.example.assignmenthamzamasoodchatapp.Model.User;
 import com.example.assignmenthamzamasoodchatapp.R;
 
@@ -47,7 +48,27 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
             Glide.with(mContext).load(user.getImageURL()).into(holder.profile_image);
         }
 
+        if (ischat){
+            if (user.getStatus().equals("online")){
+                holder.img_on.setVisibility(View.VISIBLE);
+                holder.img_off.setVisibility(View.GONE);
+            } else {
+                holder.img_on.setVisibility(View.GONE);
+                holder.img_off.setVisibility(View.VISIBLE);
+            }
+        } else {
+            holder.img_on.setVisibility(View.GONE);
+            holder.img_off.setVisibility(View.GONE);
+        }
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, MessageActivity.class);
+                intent.putExtra("userid", user.getId());
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
